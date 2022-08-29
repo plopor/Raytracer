@@ -6,8 +6,7 @@ Lua
     http://www.lua.org/
 GLM
     http://glm.g-truc.net/0.9.7/index.html
-ImGui
-    https://github.com/ocornut/imgui
+
 
 Compilation: make clean, make. Perform all commands in the source directory
 
