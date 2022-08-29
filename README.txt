@@ -9,11 +9,15 @@ GLM
 ImGui
     https://github.com/ocornut/imgui
 
-Compilation: make clean and make
+Compilation: make clean, make. Perform all commands in the source directory
 
 Manual:
 
 NOTE tested only on Linux environments.
+
+For a better display of the objectives, a PDF "UI PDF" documenting each objective is included.
+    NOTE The images for the UI PDF are the same *_demo.png images included in the source folder described later.
+An in depth report PDF "Report" describing the purpose for and techniques used in the project is also included. It also details any external references or assets used.
 
 NOTE that this is using the Phong illumination model.
 NOTE that the diffuse coefficient is used to decide the ambient component of Phong lighting.
@@ -25,7 +29,6 @@ NOTE that the sampled plane for area lights is arbitrarily determined and set to
 NOTE that the number of glossy transmission rays is arbitrarily determined and set to 6.
 NOTE that the number of glossy reflection rays is is arbitrarily determined and set to 36.
 The arbitrary constants set above were decided based on what I personally thought looked the best and took the least time to render.
-
 
 To render the image described by the lua script demo.lua, use ./RT Assets/demo.lua.
 
@@ -39,7 +42,5 @@ NOTE that when assigning materials to spheres, there should be a DIFFERENT mater
 
 NOTE that in addition to screenshot.png which is my final scene, I've also included several additional screenshots labelled *_demo.png that each demonstrate a specific feature.
 NOTE that in terms of external resources, I've included stb_image.hpp to take input from a PNG to texture and bump map along with their PNGs.
-NOTE that for the objective of UI, the PDF documenting each objective will be appended to the end of the project report.
-    The images for the UI PDF however, will be the same *_demo.png images is included in this submission. The references to the external resources is also included in the report.
 
 The final scene consists of 2 lights; white, yellow and a collection of spheres exhibiting perfect/glossy reflection/refraction, bump mapping, texture mapping, soft shadows, and anti-aliasing.
